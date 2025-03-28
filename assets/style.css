@@ -55,6 +55,7 @@
      margin-top: 20px;  /* Keep some space above */
     margin-bottom: 5px; /* Reduce space below */
     font-size: 20px;
+     border-bottom: 2px solid #ddd; /* Adds grey line to separate sections */
 }
 
 .right-section p {
