@@ -1,0 +1,20 @@
+{
+    "personal_details": {
+        "name": "Karol Janowski",
+        "address": "Gdynia",
+        "phone": "+48 513-435-083",
+        "email": "karoljanowski@yahoo.com",
+        "date_of_birth": "29-03-1996",
+        "nationality": "Polish",
+        "driving_license": "B"
+    },
+    "work_experience": [
+        "Junior Lawyer, KONTRA Law Firm",
+        "Junior Specialist, Polish Pomeranian Economic Zone",
+        "Junior Specialist, Polish Naval War Shipyard"
+    ],
+    "education": [
+        "Legal Advisor, Gdansk District Chamber",
+        "Master of Science, University of Gdansk"
+    ]
+}
