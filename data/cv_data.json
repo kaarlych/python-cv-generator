@@ -4,6 +4,7 @@
     "email": "johndoe@example.com",
     "phone": "+1234567890"
   },
+  "about_me": "I am a passionate software developer with experience in Java and Python. I enjoy solving complex problems and building scalable applications.",
   "education": [
     {
       "degree": "BSc Computer Science",

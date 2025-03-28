@@ -46,3 +46,15 @@
     width: 70%;
     padding: 20px;
 }
+
+.right-section h2 {
+     margin-top: 20px;  /* Keep some space above */
+    margin-bottom: 5px; /* Reduce space below */
+    font-size: 20px;
+}
+
+.right-section p {
+    margin-top: 0; /* Remove extra space above */
+    font-size: 14px;
+    line-height: 1.6;
+}
