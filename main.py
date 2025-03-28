@@ -3,7 +3,7 @@ from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 
 
-def generate_cv_from_json(json_file, output_file, image_path):
+def generate_cv_from_json(json_file, output_file, image_path, background_image):
     # Load data from the JSON file
     with open(json_file, 'r') as file:
         data = json.load(file)
@@ -16,6 +16,12 @@ def generate_cv_from_json(json_file, output_file, image_path):
     # Create a canvas
     c = canvas.Canvas(output_file, pagesize=letter)
     width, height = letter
+
+    # Draw an image as the background
+    try:
+        c.drawImage(background_image, 0, 0, width=width, height=height)  # Adjust size to cover the page
+    except Exception as e:
+        print(f"Could not load background image: {e}")
 
     # Define column positions
     left_column_x = 50
@@ -62,8 +68,9 @@ def generate_cv_from_json(json_file, output_file, image_path):
 # File paths
 json_file = "data/cv_data.json"
 image_path = "assets/cv_image.jpg"  # Replace with the actual image file path
+background_image = "assets/minimalistic_background.jpg"
 output_file = "output/Karol_Janowski_Refactored_CV.pdf"
 
 # Generate the CV
-generate_cv_from_json(json_file, output_file, image_path)
+generate_cv_from_json(json_file, output_file, image_path, background_image)
 print("CV has been generated successfully!")
