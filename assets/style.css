@@ -1,10 +1,14 @@
-/* Main container for the CV */
 .cv-container {
-    display: flex; /* Creates two-column layout */
+    display: flex;
     max-width: 800px;
     margin: auto;
     border: 1px solid #ddd;
     padding: 20px;
+}
+
+.left-section,
+.right-section {
+    padding: 20px; /* Ensure both sections have padding */
 }
 
 /* Left Section */
@@ -24,8 +28,8 @@
 
 /* Profile Picture Styling */
 .profile-picture img {
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
@@ -37,7 +41,7 @@
 }
 
 .contact-info p {
-    font-size: 14px; /* Adjust size as needed */
+    font-size: 12px; /* Adjust size as needed */
     margin: 5px 0;
 }
 
@@ -54,7 +58,15 @@
 }
 
 .right-section p {
-    margin-top: 0; /* Remove extra space above */
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.6;
+    margin-top: 0;
+     text-align: justify; /* Justify the text */
+    text-justify: inter-word; /* Adds space between words for better readability */
+    overflow-wrap: break-word; /* Break long words if they overflow */
+    word-wrap: break-word; /* Ensure the text wraps properly */
+}
+
+* {
+    box-sizing: border-box; /* Ensures padding and borders are included in width/height calculations */
 }
