@@ -1,52 +1,58 @@
 .cv-container {
     display: flex;
     max-width: 800px;
-    margin: auto;
     border: 1px solid #ddd;
-    padding: 20px;
+    padding: 10px;
+    margin: 2px;
 }
 
-.left-section,
-.right-section {
-    padding: 20px; /* Ensure both sections have padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Left Section */
 .left-section {
     width: 30%;
     background-color: #f4f4f4;
-    padding: 20px;
-    text-align: left;
+    margin: 10px;
+    padding: 10px;
 }
 
 /* Name Styling */
 .name {
     font-size: 20px;
+    text-align: center;
     font-weight: bold;
-    margin-bottom: 15px; /* Space between name and picture */
 }
 
-/* Profile Picture Styling */
+.profile-picture {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    height: 200px; /* Set a height to create vertical space for centering */
+}
+
 .profile-picture img {
     width: 140px;
     height: 140px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 0px;
 }
 
-/* Contact Info Styling */
 .contact-info {
-    font-size: 14px;
     text-align: left;
-    margin-top: 0; /* Remove extra space above contact info */
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Ensures proper layout */
+    flex-direction: column; /* Stacks items vertically */
+    gap: 5px; /* Creates consistent spacing */
 }
 
 .contact-info p {
-    text-align: left;
-    font-size: 12px; /* Adjust size as needed */
-    margin: 5px 0;
-    margin-top: 0;
+    margin: 0; /* Removes any default margins */
 }
 
 /* Right Section */

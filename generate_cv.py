@@ -10,8 +10,21 @@ with open('data/cv_data.json', 'r') as file:
 env = Environment(loader=FileSystemLoader('templates'))
 template = env.get_template('template.html')
 
-# Render the HTML with data (including the image path)
-rendered_html = template.render(data)
+
+# Render the template with data from the JSON file
+rendered_html = template.render(
+    name=data['name'],
+    address=data['personal']['address'],
+    phone_number=data['personal']['phone_number'],
+    email=data['personal']['email'],
+    date_of_birth=data['personal']['date_of_birth'],
+    nationality=data['personal']['nationality'],
+    driving_license=data['personal']['driving_license'],
+    github=data['personal']['github'],
+    about_me=data['about_me'],
+    education=data['education'],
+    experience=data['experience']
+)
 
 # Generate the PDF and save it to the 'output' folder
 HTML(string=rendered_html).write_pdf('output/cv.pdf')
