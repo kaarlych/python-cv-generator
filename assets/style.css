@@ -35,9 +35,8 @@
 }
 
 .profile-picture img {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
+    width: 160px;
+    height: 190px;
     object-fit: cover;
 }
 
@@ -61,11 +60,15 @@
     padding: 20px;
 }
 
+.right-section h1 {
+    font-size: 35px;
+}
+
 .right-section h2 {
-     margin-top: 20px;  /* Keep some space above */
+    margin-top: 20px;  /* Keep some space above */
     margin-bottom: 5px; /* Reduce space below */
     font-size: 20px;
-     border-bottom: 2px solid #ddd; /* Adds grey line to separate sections */
+    border-bottom: 2px solid #ddd; /* Adds grey line to separate sections */
 }
 
 .right-section p {

@@ -14,6 +14,7 @@ template = env.get_template('template.html')
 # Render the template with data from the JSON file
 rendered_html = template.render(
     name=data['name'],
+    title=data['title'],
     address=data['personal']['address'],
     phone_number=data['personal']['phone_number'],
     email=data['personal']['email'],
