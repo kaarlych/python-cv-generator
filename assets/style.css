@@ -4,9 +4,9 @@
     border: 1px solid #ddd;
     padding: 10px;
     margin: 2px;
-    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
-                url('images/cat_paws.png');
-    background-size: 150%; /* Makes the image 150% of its original size (zoomed out) */
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
+                url('images/garfield_lasagnia.jpg');
+    background-size: 10%; /* Makes the image 150% of its original size (zoomed out) */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -21,7 +21,7 @@
 /* Left Section */
 .left-section {
     width: 30%;
-    background-color: rgba(255, 192, 203, 0.9); /* Light pink with 30% opacity */
+   background-color: rgba(210, 180, 140, 0.4); /* Sand color with 90% opacity */
     margin: 10px;
     padding: 10px;
 }
