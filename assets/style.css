@@ -42,7 +42,7 @@
 
 .profile-picture img {
     width: 160px;
-    height: 190px;
+    height: 220px;
     object-fit: cover;
 }
 
@@ -58,6 +58,16 @@
 
 .contact-info p {
     margin: 0; /* Removes any default margins */
+}
+
+.language {
+    text-align: left;
+    font-size: 12px;
+    margin-top: 0;
+    padding: 0;
+    display: flex; /* Ensures proper layout */
+    flex-direction: column; /* Stacks items vertically */
+    gap: 5px; /* Creates consistent spacing */
 }
 
 /* Right Section */
