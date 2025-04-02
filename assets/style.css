@@ -4,8 +4,8 @@
     border: 1px solid #ddd;
     padding: 10px;
     margin: 2px;
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
-                url('images/tree_background.jpg');
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+                url('images/cat_paws.png');
     background-size: 150%; /* Makes the image 150% of its original size (zoomed out) */
     background-size: cover;
     background-repeat: no-repeat;
@@ -21,7 +21,7 @@
 /* Left Section */
 .left-section {
     width: 30%;
-    background-color: rgba(144, 238, 144, 0.3);
+    background-color: rgba(255, 192, 203, 0.9); /* Light pink with 30% opacity */
     margin: 10px;
     padding: 10px;
 }
@@ -56,11 +56,17 @@
     gap: 5px; /* Creates consistent spacing */
 }
 
-.contact-info p {
-    margin: 0; /* Removes any default margins */
+.language {
+    text-align: left;
+    font-size: 12px;
+    margin-top: 0;
+    padding: 0;
+    display: flex; /* Ensures proper layout */
+    flex-direction: column; /* Stacks items vertically */
+    gap: 5px; /* Creates consistent spacing */
 }
 
-.language {
+.interests {
     text-align: left;
     font-size: 12px;
     margin-top: 0;
