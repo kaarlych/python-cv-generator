@@ -5,7 +5,7 @@
     padding: 10px;
     margin: 2px;
     background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
-                url('images/garfield_lasagnia.jpg');
+                url('images/cat_paws.png');
     background-size: 10%; /* Makes the image 150% of its original size (zoomed out) */
     background-size: cover;
     background-repeat: no-repeat;
@@ -21,7 +21,7 @@
 /* Left Section */
 .left-section {
     width: 30%;
-   background-color: rgba(210, 180, 140, 0.4); /* Sand color with 90% opacity */
+   background-color: rgba(255, 182, 193, 0.4); /* Light pink color with 40% opacity */
     margin: 10px;
     padding: 10px;
 }
