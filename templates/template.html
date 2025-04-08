@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ name }}'s CV</title>
-    <link rel="stylesheet" href="file:///Users/karoljanowski/Dev/python-cv-generator/assets/style.css">
+    <link rel="stylesheet" href="{{ css_path }}">
 </head>
 <body>
 
@@ -17,7 +17,7 @@
         <p><br></p>
 
         <div class="profile-picture">
-            <img src="file:///Users/karoljanowski/Dev/python-cv-generator/assets/images/cv_image.jpg"
+            <img src="{{ file_url('assets/images/cv_image.jpg') }}"
                  alt="Profile Picture">
         </div>
 
