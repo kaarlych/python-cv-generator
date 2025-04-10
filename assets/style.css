@@ -93,14 +93,18 @@
     border-bottom: 2px solid #ddd; /* Adds grey line to separate sections */
 }
 
-.right-section p {
+.right-section p1 {
     font-size: 12px;
     line-height: 1.6;
-    margin-top: 0;
-     text-align: justify; /* Justify the text */
-    text-justify: inter-word; /* Adds space between words for better readability */
-    overflow-wrap: break-word; /* Break long words if they overflow */
-    word-wrap: break-word; /* Ensure the text wraps properly */
+    margin-bottom: 5px;
+    text-align: justify;
+    display: flex; /* Ensures proper layout */
+}
+
+.right-section p2 {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 5px;
 }
 
 * {

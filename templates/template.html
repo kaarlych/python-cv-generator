@@ -47,22 +47,22 @@
         <h1><strong>{{ title }}</strong></h1>
 
         <h2><strong>🤖About Me: </strong></h2>
-        <p>{{ about_me }}</p>
+        <p1>{{ about_me }}</p1>
 
         <h2>Education</h2>
         <ul>
             {% for edu in education %}
-            <li>{{ edu.degree }} - {{ edu.institution }} ({{ edu.year }})</li>
+                <li><p2>{{ edu.degree }} - {{ edu.institution }} ({{ edu.year }})</p2></li>
             {% endfor %}
         </ul>
 
-        <h2>Experience</h2>
-        <ul>
-            {% for exp in experience %}
-            <li>{{ exp.title }} at {{ exp.company }} ({{ exp.years }})</li>
-            {% endfor %}
-        </ul>
-    </div>
+    <h2>Experience</h2>
+    <ul>
+        {% for exp in experience %}
+            <li><p2>{{ exp.title }} at {{ exp.company }} ({{ exp.years }})</p2></li>
+        {% endfor %}
+    </ul>
+</div>
 
 </div>
 
