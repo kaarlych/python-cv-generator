@@ -38,7 +38,9 @@ rendered_html = template.render(
     github=data['personal']['github'],
     about_me=data['about_me'],
     education=data['education'],
-    experience=data['experience']
+    experience=data['experience'],
+    courses=data['courses'],
+    skills=data['skills']
 )
 
 # Generate the PDF and save it to the 'output' folder

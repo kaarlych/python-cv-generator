@@ -107,6 +107,30 @@
     margin-bottom: 5px;
 }
 
+.skills-list {
+    margin: 0;
+}
+
+.skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+}
+
+.skill-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.skill-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+
 * {
     box-sizing: border-box; /* Ensures padding and borders are included in width/height calculations */
 }

@@ -59,17 +59,40 @@
         <h2>Education</h2>
         <ul>
             {% for edu in education %}
-                <li><p1>{{ edu.degree }} - {{ edu.institution }} ({{ edu.year }})<br></p1></li>
+            <li>
+                <p1>{{ edu.degree }} - {{ edu.institution }} ({{ edu.year }})<br></p1>
+            </li>
             {% endfor %}
         </ul>
 
-    <h2>Experience</h2>
-    <ul>
-        {% for exp in experience %}
-            <li><p1>{{ exp.title }} at {{ exp.company }} ({{ exp.years }})<br></p1></li>
-        {% endfor %}
-    </ul>
-</div>
+        <h2>Experience</h2>
+        <ul>
+            {% for exp in experience %}
+            <li>
+                <p1>{{ exp.title }} at {{ exp.company }} ({{ exp.years }})<br></p1>
+            </li>
+            {% endfor %}
+        </ul>
+
+        <h2>Courses</h2>
+        <ul>
+            {% for crs in courses %}
+            <li>
+                <p1>{{ crs.title }} ({{ crs.years }})<br></p1>
+            </li>
+            {% endfor %}
+        </ul>
+
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            {% for skl in skills %}
+            <li class="skill-item">
+                <span class="skill-name">{{ skl.skill }}</span>
+                <span class="skill-stars">{{ skl.level }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
 
 </div>
 

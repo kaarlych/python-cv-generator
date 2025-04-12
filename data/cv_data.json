@@ -19,7 +19,7 @@
     }
   ],
   "experience": [
-     {
+    {
       "title": "Junior Lawyer",
       "company": "Law Firm of Legal Advisers KONTRA, Gdynia",
       "years": "Oct 2021 - May 2022"
@@ -33,6 +33,38 @@
       "title": "Junior Specialist",
       "company": "Polish Naval War Shipyard, Gdynia",
       "years": "Dec 2019 - Oct 2020"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Zajavka Project",
+      "years": "Oct 2021 - May 2022"
+    }
+  ],
+  "skills": [
+    {
+      "skill": "Java",
+      "level": "⭐️⭐"
+    },
+    {
+      "skill": "Hibernate",
+      "level": "⭐️⭐"
+    },
+    {
+      "skill": "Spring Framework",
+      "level": "⭐️⭐"
+    },
+    {
+      "skill": "PostgreSQL",
+      "level": "⭐️⭐"
+    },
+    {
+      "skill": "Git",
+      "level": "⭐️⭐"
+    },
+    {
+      "skill": "Linux",
+      "level": "⭐️⭐"
     }
   ]
 }
