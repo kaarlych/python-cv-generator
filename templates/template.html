@@ -44,8 +44,8 @@
 
         <div class="interests">
             <h2>Interests: </h2>
-            <p><strong>Windsurfing 🏄‍♀️</strong><br></p>
-            <p><strong>Cats️ 🐱</strong><br></p>
+            <p><strong>Windsurfing️</strong><br></p>
+            <p><strong>Cats️</strong><br></p>
         </div>
     </div>
 
@@ -53,20 +53,20 @@
     <div class="right-section">
         <h1><strong>{{ title }}</strong></h1>
 
-        <h2><strong>🤖About Me: </strong></h2>
+        <h2><strong>About Me: </strong></h2>
         <p1>{{ about_me }}</p1>
 
         <h2>Education</h2>
         <ul>
             {% for edu in education %}
-                <li><p2>{{ edu.degree }} - {{ edu.institution }} ({{ edu.year }})</p2></li>
+                <li><p1>{{ edu.degree }} - {{ edu.institution }} ({{ edu.year }})<br></p1></li>
             {% endfor %}
         </ul>
 
     <h2>Experience</h2>
     <ul>
         {% for exp in experience %}
-            <li><p2>{{ exp.title }} at {{ exp.company }} ({{ exp.years }})</p2></li>
+            <li><p1>{{ exp.title }} at {{ exp.company }} ({{ exp.years }})<br></p1></li>
         {% endfor %}
     </ul>
 </div>
