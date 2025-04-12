@@ -85,13 +85,16 @@
 
         <h2>Skills</h2>
         <ul class="skills-list">
-            {% for skl in skills %}
-            <li class="skill-item">
+    {% for skl in skills %}
+        <li class="skill-item">
+            <span class="skill-left">
+                <img src="{{ file_url('assets/images/icons/' ~ skl.icon) }}" alt="{{ skl.skill }} icon" class="skill-icon">
                 <span class="skill-name">{{ skl.skill }}</span>
-                <span class="skill-stars">{{ skl.level }}</span>
-            </li>
-            {% endfor %}
-        </ul>
+            </span>
+            <span class="skill-stars">{{ skl.level }}</span>
+        </li>
+    {% endfor %}
+</ul>
     </div>
 
 </div>

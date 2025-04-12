@@ -38,33 +38,39 @@
   "courses": [
     {
       "title": "Zajavka Project",
-      "years": "Oct 2021 - May 2022"
+      "years": "May 2022 - Present"
     }
   ],
   "skills": [
     {
       "skill": "Java",
-      "level": "⭐️⭐"
+      "level": "⭐️⭐",
+      "icon": "java_icon.svg"
+    },
+    {
+      "skill": "Spring",
+      "level": "⭐️⭐",
+      "icon": "spring_icon.svg"
     },
     {
       "skill": "Hibernate",
-      "level": "⭐️⭐"
-    },
-    {
-      "skill": "Spring Framework",
-      "level": "⭐️⭐"
+      "level": "⭐️⭐",
+      "icon": "hibernate_icon.svg"
     },
     {
       "skill": "PostgreSQL",
-      "level": "⭐️⭐"
+      "level": "⭐️⭐",
+      "icon": "postgresql_icon.svg"
     },
     {
       "skill": "Git",
-      "level": "⭐️⭐"
+      "level": "⭐️⭐",
+      "icon": "git_icon.svg"
     },
     {
       "skill": "Linux",
-      "level": "⭐️⭐"
+      "level": "⭐️⭐",
+      "icon": "Linux_icon.svg"
     }
   ]
 }

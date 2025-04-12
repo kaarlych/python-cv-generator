@@ -121,13 +121,14 @@
 .skill-left {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 8px; /* space between icon and text */
 }
 
 .skill-icon {
-    width: 20px;
-    height: 20px;
-    object-fit: contain;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    vertical-align: middle;
 }
 
 
