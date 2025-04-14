@@ -56,6 +56,18 @@
         <h2><strong>About Me: </strong></h2>
         <p1>{{ about_me }}</p1>
 
+        <h2>Skills:</h2>
+        <div class="icon-wrapper">
+            <img src="{{ file_url('assets/images/icons/java_icon.svg') }}" alt="java_icon" class="skill-icon">
+            <img src="{{ file_url('assets/images/icons/spring_icon.svg') }}" alt="java_icon" class="skill-icon">
+            <img src="{{ file_url('assets/images/icons/hibernate_icon.svg') }}" alt="java_icon" class="skill-icon">
+            <img src="{{ file_url('assets/images/icons/postgresql_icon.svg') }}" alt="java_icon" class="skill-icon">
+            <img src="{{ file_url('assets/images/icons/linux_icon.svg') }}" alt="java_icon" class="skill-icon">
+            <img src="{{ file_url('assets/images/icons/git_icon.svg') }}" alt="java_icon" class="skill-icon">
+        </div>
+
+<!--        TODO: add project section to the CV here-->
+
         <h2>Education</h2>
         <ul>
             {% for edu in education %}
@@ -82,19 +94,6 @@
             </li>
             {% endfor %}
         </ul>
-
-        <h2>Skills</h2>
-        <ul class="skills-list">
-    {% for skl in skills %}
-        <li class="skill-item">
-            <span class="skill-left">
-                <img src="{{ file_url('assets/images/icons/' ~ skl.icon) }}" alt="{{ skl.skill }} icon" class="skill-icon">
-                <span class="skill-name">{{ skl.skill }}</span>
-            </span>
-            <span class="skill-stars">{{ skl.level }}</span>
-        </li>
-    {% endfor %}
-</ul>
     </div>
 
 </div>
