@@ -28,7 +28,7 @@
 
 /* Name Styling */
 .name {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     font-weight: bold;
 }
@@ -94,17 +94,11 @@
 }
 
 .right-section p1 {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.6;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     text-align: justify;
     display: flex; /* Ensures proper layout */
-}
-
-.right-section p2 {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 5px;
 }
 
 .skills-list {

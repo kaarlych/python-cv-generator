@@ -43,7 +43,7 @@
         </div>
 
         <div class="interests">
-            <h2>Interests </h2>
+            <h2>Interests: </h2>
             <p><strong>Windsurfing️/Foiling</strong><br></p>
             <p><strong>CLI tools</strong><br></p>
             <p><strong>Cats️</strong><br></p>
@@ -67,14 +67,23 @@
             <img src="{{ file_url('assets/images/icons/git_icon.svg') }}" alt="java_icon" class="skill-icon">
         </div>
 
-<!--        TODO: add 🛠 Projects: section to the CV here-->
+        <h2>Projects: </h2>
+        <ul>
+            {% for pro in projects %}
+            <li>
+                <p1>Title: {{ pro.title }}</p1>
+                <p1>Description: {{ pro.description }}</p1>
+                <p1>Technologies used: {{ pro.technologies }}</p1>
+            </li>
+            {% endfor %}
+        </ul>
 
 
         <h2>Education: </h2>
         <ul>
             {% for edu in education %}
             <li>
-                <p1>{{ edu.degree }} - {{ edu.institution }} ({{ edu.year }})<br></p1>
+                <p1>{{ edu.degree }} - {{ edu.institution }} ({{ edu.year }})</p1>
             </li>
             {% endfor %}
         </ul>
@@ -83,7 +92,7 @@
         <ul>
             {% for crs in courses %}
             <li>
-                <p1>{{ crs.title }} ({{ crs.years }})<br></p1>
+                <p1>{{ crs.title }} ({{ crs.years }})</p1>
             </li>
             {% endfor %}
         </ul>
@@ -92,7 +101,7 @@
         <ul>
             {% for exp in experience %}
             <li>
-                <p1>{{ exp.title }} at {{ exp.company }} ({{ exp.years }})<br></p1>
+                <p1>{{ exp.title }} at {{ exp.company }} ({{ exp.years }})</p1>
             </li>
             {% endfor %}
         </ul>

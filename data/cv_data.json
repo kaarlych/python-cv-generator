@@ -18,6 +18,18 @@
       "year": "2019"
     }
   ],
+  "projects": [
+    {
+      "title": "Car Dealership Project",
+      "description": "Final project of zajavka workshop",
+      "technologies": "Java, Spring Framework, Hibernate, PostgreSQL, Docker, Git/Github"
+    },
+     {
+      "title": "Mortgage Calculator Project",
+      "description": "Final project of zajavka bootcamp",
+      "technologies": "Java, Spring-core, Lombock, Logback, Stream API, Gradle/Maven"
+    }
+  ],
   "experience": [
     {
       "title": "Junior Lawyer",

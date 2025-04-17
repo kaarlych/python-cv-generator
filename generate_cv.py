@@ -40,7 +40,8 @@ rendered_html = template.render(
     education=data['education'],
     experience=data['experience'],
     courses=data['courses'],
-    skills=data['skills']
+    skills=data['skills'],
+    projects=data['projects']
 )
 
 # Generate the PDF and save it to the 'output' folder
