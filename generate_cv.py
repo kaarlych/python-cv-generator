@@ -1,7 +1,10 @@
 import json
+import argparse
+from datetime import datetime
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
 from weasyprint import HTML
+
 
 # Base directory (directory of main.py)
 base_dir = Path(__file__).parent.resolve()
@@ -44,8 +47,22 @@ rendered_html = template.render(
     projects=data['projects']
 )
 
-# Generate the PDF and save it to the 'output' folder
-(output_dir := base_dir / 'output').mkdir(exist_ok=True)
-HTML(string=rendered_html).write_pdf(output_dir / 'cv.pdf')
 
-print("PDF CV generated successfully!")
+# Generate timestamped filename as default
+timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M")
+default_filename = f"cv_{timestamp}.pdf"
+
+# Set up argument parser
+parser = argparse.ArgumentParser()
+parser.add_argument('--output', default=default_filename, help='Output PDF filename')
+args = parser.parse_args()
+
+
+# Ensure output directory exists
+(output_dir := base_dir / 'output').mkdir(exist_ok=True)
+
+# Generate PDF
+HTML(string=rendered_html).write_pdf(output_dir / args.output)
+
+print(f"PDF CV generated successfully! Saved to output/{args.output}")
+

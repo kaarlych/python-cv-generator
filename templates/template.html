@@ -71,9 +71,9 @@
         <ul>
             {% for pro in projects %}
             <li>
-                <p1>Title: {{ pro.title }}</p1>
-                <p1>Description: {{ pro.description }}</p1>
-                <p1>Technologies used: {{ pro.technologies }}</p1>
+                <p2><strong>Title:</strong>{{ pro.title }}</p2><br>
+                <p2><strong>Description: </strong> {{ pro.description }}</p2><br>
+                <p2><strong>Technologies: </strong> {{ pro.technologies }}</p2><br>
             </li>
             {% endfor %}
         </ul>

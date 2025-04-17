@@ -97,8 +97,14 @@
     font-size: 12px;
     line-height: 1.6;
     margin-bottom: 2px;
-    text-align: justify;
-    display: flex; /* Ensures proper layout */
+     text-align: justify;
+     display: flex; /* Ensures proper layout */
+}
+
+.right-section p2 {
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 2px;
 }
 
 .skills-list {
