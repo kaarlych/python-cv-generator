@@ -1,15 +1,15 @@
 {
   "name": "Karol Janowski",
   "personal": {
-    "address": "Gdynia, Poland 🇵🇱",
+    "address": "Gdynia, Poland",
     "phone_number": "+48 513-435-083",
-    "email": "karoljanowski@yahoo.com",
+    "email": "karoljanowski.dev@gmail.com",
     "date_of_birth": "29-03-1996",
     "nationality": "Polish",
     "driving_license": "B",
     "github": "https://github.com/kaarlych"
   },
-  "title": "Software Developer",
+  "title": "Curriculum Vitae",
   "about_me": "Hi, my name is Karol Janowski. In 2022, I transitioned from a career in tax law to Java backend development. I joined the Zajavka project — one of the most comprehensive Java courses on the Polish market — to build solid foundations in software engineering. I’m passionate about backend development, working in the terminal, and automating tasks with Python and Bash. Currently seeking my first role as a Java software engineer, where I can grow and contribute to real-world projects. In my free time, I windsurf and foil in Rewa, or chill with my cat 🐱.",
   "education": [
     {

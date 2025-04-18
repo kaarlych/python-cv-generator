@@ -48,7 +48,7 @@
 
 .contact-info {
     text-align: left;
-    font-size: 12px;
+    font-size: 11px;
     margin: 0;
     padding: 0;
     display: flex; /* Ensures proper layout */
@@ -58,7 +58,7 @@
 
 .language {
     text-align: left;
-    font-size: 12px;
+    font-size: 11px;
     margin-top: 0;
     padding: 0;
     display: flex; /* Ensures proper layout */
@@ -68,7 +68,7 @@
 
 .interests {
     text-align: left;
-    font-size: 12px;
+    font-size: 11px;
     margin-top: 0;
     padding: 0;
     display: flex; /* Ensures proper layout */
